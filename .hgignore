@@ -1,0 +1,6 @@
+^custom_tags.txt$
+\.grf$
+\.nml$
+^parsetab.py$
+
+\#$

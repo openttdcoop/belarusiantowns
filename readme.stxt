@@ -1,0 +1,38 @@
+------------------------------------------------------
+        Belarusian Town Names {{VERSION}}
+------------------------------------------------------
+
+Type:
+1. 206 biggest cities
+
+Requirements:
+TTDPatch: 2.5 beta 5
+OpenTTD: 0.6 (or trunk r10211)
+
+Usage:
+You need to load Belarusian Town Names BEFORE you start a new game. Choose the
+Town Names at the Game Options GUI.
+
+Hint from OpenTTD Readme:
+"With the added support for font-based text selecting a non-latin language will
+result in garbage (lots of '?') shown on screen. Please open your configuration
+file and add a desired font for small/medium/-and large_font. This can be a font
+name like "Tahoma" or a path to a font."
+
+GRFID: {{GRFID}}
+Filename: {{FILENAME}} 
+md5sum: {{MD5SUM}}
+
+Homepage: http://dev.openttdcoop.org/projects/belarusian
+
+Discussion:
+TT-Forums: http://www.tt-forums.net/viewtopic.php?t=
+
+Credits:
+Design: KorneySan
+Coder: Ammler
+
+License: GPL v2
+
+-------------------
+{{DATE}} / Ammler
