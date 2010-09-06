@@ -1,5 +1,4 @@
 lang: 7F
 STR_GRF_NAME                     :Belarusian Town Names {VERSION}
 STR_GRF_DESCRIPTION              :Design: KorneySan{}{DATE} / Ammler{}{}{ORANGE}Hint: {WHITE}"Беларускiя" <-- if you see "????????i?" only, please configure a UTF-8 font
-
 STR_GAME_OPTIONS_TOWN_NAME       :Belarusian
