@@ -1,3 +1,11 @@
+06 Sep 2010
+
+- Some strings fixed
+
+03 Sep 2010
+
+- Priority of some towns is adjusted
+
 31 Aug 2010
 
 - Initial release

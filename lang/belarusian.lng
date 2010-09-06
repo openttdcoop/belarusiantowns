@@ -1,3 +1,3 @@
 lang: 10
 STR_GAME_OPTIONS_TOWN_NAME :Беларускiя
-STR_GRF_DESCRIPTION              :Беларускiя назвы гарадоў{}Распрацоўка: KorneySan\n{DATE} / Ammler{}{}{ORANGE}Hint: {WHITE}If you don't see belarusian text, please configure a UTF-8 font
+STR_GRF_DESCRIPTION              :Беларускiя назвы гарадоў{}Распрацоўка: KorneySan{}{DATE} / Ammler

@@ -1,3 +1,3 @@
 lang: 07
 STR_GAME_OPTIONS_TOWN_NAME :Белорусские
-STR_GRF_DESCRIPTION              :Белорусские названия городов{}Разработка: KorneySan\n{DATE} / Ammler{}{}{ORANGE}Hint: {WHITE}If you don't see russian text, please configure a UTF-8 font
+STR_GRF_DESCRIPTION              :Белорусские названия городов{}Разработка: KorneySan{}{DATE} / Ammler
