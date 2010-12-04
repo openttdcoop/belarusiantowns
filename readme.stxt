@@ -1,5 +1,5 @@
 ------------------------------------------------------
-        Belarusian Town Names {{VERSION}}
+        Belarusian Town Names {VERSION}
 ------------------------------------------------------
 
 Type:
@@ -19,9 +19,9 @@ result in garbage (lots of '?') shown on screen. Please open your configuration
 file and add a desired font for small/medium/-and large_font. This can be a font
 name like "Tahoma" or a path to a font."
 
-GRFID: {{GRFID}}
-Filename: {{FILENAME}} 
-md5sum: {{MD5SUM}}
+GRFID:    {GRFID}
+Filename: {FILENAME}
+md5sum:   {MD5SUM}
 
 Homepage: http://dev.openttdcoop.org/projects/belarusian
 
@@ -35,4 +35,4 @@ Coder: Ammler
 License: GPL v2
 
 -------------------
-{{DATE}} / Ammler
+{DATE} / Ammler

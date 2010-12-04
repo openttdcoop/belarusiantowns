@@ -12,10 +12,10 @@ NML="$FILENAME.nml"
 
 # fill custom-tags.txt for lang files
 cat >custom_tags.txt <<EOF
-VERSION: $VERSION
-DATE: $VERDATE
-GRFID: `echo $GRFID | tr '\' ' ' 2>/dev/null`
-FILENAME: $FILENAME.grf
+VERSION :$VERSION
+DATE    :$VERDATE
+GRFID   :`echo "$GRFID" | sed -e "s/\\\\\\//" | tr '\\\\' ' '`
+FILENAME:$FILENAME.grf
 EOF
 
 # split big list to parts of 255:
@@ -24,9 +24,11 @@ split -l126 data/belarusian-towns.txt tmp/
 
 cat >$NML <<EOF
 grf {
-  grfid: "$GRFID";
-  name : string(STR_GRF_NAME);
-  desc : string(STR_GRF_DESCRIPTION);
+  grfid  : "$GRFID";
+  name   : string(STR_GRF_NAME);
+  desc   : string(STR_GRF_DESCRIPTION);
+  version: $REVISION;
+  min_compatible_version: 0; 
 }
 EOF
 
@@ -55,10 +57,18 @@ cat >>$NML <<EOF
 }
 EOF
 
-nmlc $NML
-echo "MD5SUM: `md5sum $FILENAME.grf | cut -f1 -d' '`" >> custom_tags.txt
-. lib/sed.custom_tags.sh
-. lib/zip.sh
+# delete the GRF, so we can fail
+rm $FILENAME.grf $FILENAME.nfo 2>/dev/null
+nmlc --nfo $FILENAME.nfo --grf $FILENAME.grf $NML
+
+if [ -f $FILENAME.grf ]; then
+  echo "MD5SUM :`md5sum $FILENAME.grf | cut -f1 -d' '`" >> custom_tags.txt
+  . lib/sed.custom_tags.sh
+  . lib/zip.sh
+else
+  echo "building failed!"
+  exit 1
+fi
 
 exit
 
